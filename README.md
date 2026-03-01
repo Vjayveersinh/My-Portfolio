@@ -20,8 +20,7 @@ User Browser → CloudFront (CDN + HTTPS) → Amazon S3 (Static Website Hosting)
 - `index.html` – main website page
 - `style.css` – website styling
 - `script.js` – optional interactions
-- `assets/` – images (if used)
-
+  
 ## How to Deploy (High Level)
 1. Create an S3 bucket and upload website files.
 2. Enable **Static website hosting** and set `index.html` as the entry file.
