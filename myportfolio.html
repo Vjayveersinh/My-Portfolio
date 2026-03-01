@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jayveersinh Vihol | Front-End Developer</title>
+  <meta name="description" content="Professional portfolio website showcasing projects, skills, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="logo" href="#home">Jayveersinh Vihol</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container">
+      <p class="hero-kicker">Hello, I’m</p>
+      <h1>Jayveersinh Vihol</h1>
+      <p class="hero-role">Front-End Developer & UI Enthusiast</p>
+      <p class="hero-text">
+        I design and build modern, responsive websites that deliver clean user experiences and measurable results.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section container" id="about">
+      <h2>About Me</h2>
+      <p>
+        Cloud-focused IT professional with 5+ years of experience in infrastructure support, system administration, and hybrid environments.
+        Hands-on experience with AWS services including EC2, S3, IAM, VPC, RDS, and CloudWatch. Strong background in identity and access management, 
+        network configuration, and system reliability.Experienced in troubleshooting production systems and optimizing performance. 
+        Currently preparing for AWS Certified Solutions Architect - Associate.
+      </p>
+      <p>
+        Outside of coding, I explore design systems, animation trends, and performance optimization to keep my work polished and up to date.
+      </p>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>A few selected projects that highlight my design and development approach.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <a href="https://example.com/project-1" target="_blank" rel="noopener noreferrer" class="project-image-link">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Dashboard interface project preview" />
+          </a>
+          <div class="project-content">
+            <h3>Analytics Dashboard</h3>
+            <p>A responsive dashboard with dynamic charts, reusable UI components, and dark mode support.</p>
+            <a href="https://example.com/project-1" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a href="https://example.com/project-2" target="_blank" rel="noopener noreferrer" class="project-image-link">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80" alt="Team collaboration platform project preview" />
+          </a>
+          <div class="project-content">
+            <h3>Team Collaboration App</h3>
+            <p>A productivity app landing page focused on visual hierarchy, conversion, and mobile usability.</p>
+            <a href="https://example.com/project-2" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a href="https://example.com/project-3" target="_blank" rel="noopener noreferrer" class="project-image-link">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Code editor and portfolio case study preview" />
+          </a>
+          <div class="project-content">
+            <h3>Portfolio Case Study</h3>
+            <p>A personal brand site featuring smooth interactions, project storytelling, and optimized loading.</p>
+            <a href="https://example.com/project-3" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p>Technologies and tools I use to craft modern web experiences.</p>
+      </div>
+      <ul class="skills-list" aria-label="Skills list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Accessibility</li>
+        <li>Git & GitHub</li>
+        <li>Figma</li>
+        <li>Performance Optimization</li>
+      </ul>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Let’s build something impactful together.</p>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jayveersinh Vihol. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
