@@ -3,9 +3,8 @@
 This project is a personal portfolio website deployed on AWS using **Amazon S3 (Static Website Hosting)** and **Amazon CloudFront (CDN)**.
 
 ## Live Demo
-- CloudFront URL: https://YOUR_CLOUDFRONT_DOMAIN.cloudfront.net  
-- S3 Website Endpoint (optional): http://YOUR_BUCKET_WEBSITE_ENDPOINT
-
+- CloudFront URL: https://dc61g20ci9ox4.cloudfront.net/  
+- S3 Website Endpoint (optional): http://jayveersinh-portfolio-2026.s3-website.ca-central-1.amazonaws.com
 ## Architecture
 User Browser → CloudFront (CDN + HTTPS) → Amazon S3 (Static Website Hosting)
 
