@@ -17,7 +17,7 @@ User Browser → CloudFront (CDN + HTTPS) → Amazon S3 (Static Website Hosting)
 - Resolved **504 Gateway Timeout** caused by an origin protocol mismatch (HTTPS → HTTP).
 
 ## Project Files
-- `index.html` – main website page
+- `myportfolio.html` – main website page
 - `style.css` – website styling
 - `script.js` – optional interactions
   
