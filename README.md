@@ -25,7 +25,7 @@ This simulates a production-ready static website deployment architecture.
 
 ## 🏗️ Architecture
 ## Architecture Diagram
-![AWS Portfolio Architecture](architecture-diagram.png)
+![AWS Portfolio Architecture](architecture.png)
 
 ## Architecture Flow
 
