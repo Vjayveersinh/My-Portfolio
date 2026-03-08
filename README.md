@@ -24,14 +24,20 @@ This simulates a production-ready static website deployment architecture.
 ---
 
 ## 🏗️ Architecture
+## Architecture Diagram
+![AWS Portfolio Architecture](architecture-diagram.png)
 
-### Architecture Flow
+## Architecture Flow
 
-1. User requests the website  
-2. The request is routed to **CloudFront**  
-3. CloudFront fetches content from the **S3 static website endpoint**  
-4. Content is cached at global edge locations  
-5. HTTPS is handled by CloudFront  
+1. A user sends an **HTTPS request** to access the portfolio website.
+2. The request is routed through **Amazon CloudFront (CDN)**.
+3. CloudFront retrieves the static website content from the **Amazon S3 bucket**.
+4. Website assets such as **HTML, CSS, JavaScript, and images** are cached at CloudFront edge locations to improve performance and reduce latency.
+5. The portfolio website loads in the user's browser, including the **frontend contact form**.
+6. When a user submits the contact form, a **POST request** is sent to **Amazon API Gateway**.
+7. API Gateway invokes an **AWS Lambda function** to process the form submission.
+8. The Lambda function uses an **IAM role** with the required permissions to write the submission data into **Amazon DynamoDB**.
+9. Logs are recorded in **Amazon CloudWatch Logs** for monitoring and troubleshooting. 
 
 ---
 
